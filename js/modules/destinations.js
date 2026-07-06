@@ -40,14 +40,15 @@ export function initDestinations() {
   function openDetail(key) {
     const d = DESTINATIONS[key];
     panel.innerHTML = `
-      <div class="eyebrow">
-        <span>${d.era}</span>
-        <button class="detail-close" aria-label="Fermer">✕</button>
-      </div>
       <div class="detail-portal">
         ${DEST_ILLUSTRATIONS[key]}
         <img class="dest-photo" src="images/destination-${key}.jpg" alt="${d.name}" loading="lazy"
              onerror="this.style.display='none';">
+        <div class="detail-portal-scrim"></div>
+        <div class="detail-portal-bar">
+          <span class="detail-era-tag">${d.era}</span>
+          <button class="detail-close" aria-label="Fermer">✕</button>
+        </div>
       </div>
       <h3>${d.name}</h3>
       <div class="tagline">${d.tagline}</div>
