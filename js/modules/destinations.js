@@ -102,6 +102,7 @@ export function initDestinations() {
       </div>
     `;
     overlay.classList.add('is-open');
+    panel.scrollTop = 0
     panel.querySelector('.detail-close').addEventListener('click', closeDetail);
     const bookBtn = panel.querySelector('[data-open]');
     bookBtn.addEventListener('click', () => {
