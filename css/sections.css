@@ -1,0 +1,48 @@
+/* ============ SECTION HEADERS (génériques à toutes les sections) ============ */
+/* ============ SECTION HEADERS ============ */
+.section { padding: 120px 0; }
+.section-head { max-width: 640px; margin-bottom: 64px; }
+.section-head h2 { font-size: clamp(1.9rem, 3.4vw, 2.6rem); margin-top: 14px; }
+.section-head p { color: var(--parchment-dim); margin-top: 16px; font-size: 1.02rem; }
+
+.section-alt { background: var(--ink-soft); }
+
+.section-photo {
+  position: relative;
+  overflow: hidden;
+}
+.section-photo::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: var(--section-bg-image);
+  background-size: cover;
+  background-position: center 35%;
+  opacity: 0.32;
+  z-index: 0;
+}
+.section-photo::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(12,15,26,0.35) 0%, var(--ink) 92%);
+  z-index: 0;
+}
+.section-photo .container { position: relative; z-index: 1; }
+
+/* ============ AGENCY / ABOUT ============ */
+/* ============ AGENCY / ABOUT ============ */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.about-card {
+  border: 1px solid var(--line);
+  padding: 30px 26px;
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, rgba(198,149,44,0.05), transparent);
+  transition: border-color 0.3s, transform 0.3s var(--ease);
+}
+.about-card:hover { border-color: var(--brass); transform: translateY(-4px); }
+.about-card .num { font-family: var(--font-mono); color: var(--brass); font-size: 0.8rem; letter-spacing: 0.15em; }
+.about-card h3 { font-size: 1.15rem; margin: 14px 0 10px; }
+.about-card p { color: var(--parchment-dim); font-size: 0.94rem; }

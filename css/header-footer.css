@@ -1,0 +1,73 @@
+/* ============ HEADER ============ */
+/* ============ HEADER ============ */
+.site-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(12, 15, 26, 0.82);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 76px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+}
+.brand .dial {
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  border: 1.5px solid var(--brass);
+  position: relative;
+  flex-shrink: 0;
+}
+.brand .dial::before, .brand .dial::after {
+  content: '';
+  position: absolute;
+  background: var(--brass-light);
+  top: 50%; left: 50%;
+}
+.brand .dial::before { width: 1.5px; height: 9px; transform: translate(-50%,-100%) rotate(35deg); transform-origin: bottom; }
+.brand .dial::after { width: 1.5px; height: 6px; transform: translate(-50%,-100%) rotate(-70deg); transform-origin: bottom; }
+
+nav.main-nav { display: flex; gap: 34px; }
+nav.main-nav a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: var(--parchment-dim);
+  letter-spacing: 0.03em;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.25s;
+}
+nav.main-nav a:hover { color: var(--brass-light); }
+nav.main-nav a::after {
+  content: '';
+  position: absolute; left: 0; bottom: 0;
+  width: 0; height: 1px;
+  background: var(--brass);
+  transition: width 0.3s var(--ease);
+}
+nav.main-nav a:hover::after { width: 100%; }
+
+.nav-toggle { display: none; background: none; border: none; color: var(--parchment); font-size: 1.5rem; cursor: pointer; }
+
+/* ============ FOOTER ============ */
+/* ============ FOOTER ============ */
+.site-footer { border-top: 1px solid var(--line); padding: 56px 0 34px; }
+.footer-grid { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 30px; margin-bottom: 40px; }
+.footer-grid .brand { margin-bottom: 12px; }
+.footer-grid p { color: var(--parchment-dim); max-width: 320px; font-size: 0.9rem; }
+.footer-cols { display: flex; gap: 60px; flex-wrap: wrap; }
+.footer-col h4 { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--brass); margin-bottom: 16px; }
+.footer-col a { display: block; color: var(--parchment-dim); text-decoration: none; font-size: 0.9rem; margin-bottom: 10px; }
+.footer-col a:hover { color: var(--brass-light); }
+.footer-bottom { border-top: 1px solid var(--line); padding-top: 24px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: 0.78rem; color: var(--parchment-dim); font-family: var(--font-mono); }

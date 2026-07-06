@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TimeTravel Agency — Explorez l'histoire, réinventée</title>
+<meta name="description" content="TimeTravel Agency : voyages temporels vers Paris 1889, le Crétacé, Florence 1504 et Le Caire antique. Agent conversationnel, quiz de recommandation et réservation en ligne.">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/favicon.png">
+
+<!-- Partage social (Open Graph / Twitter Card) -->
+<meta property="og:title" content="TimeTravel Agency — Explorez l'histoire, réinventée">
+<meta property="og:description" content="Voyages temporels vers Paris 1889, le Crétacé, Florence 1504 et Le Caire antique. Agent conversationnel, quiz de recommandation et réservation en ligne.">
+<meta property="og:image" content="images/og-image.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TimeTravel Agency — Explorez l'histoire, réinventée">
+<meta name="twitter:description" content="Voyages temporels vers Paris 1889, le Crétacé, Florence 1504 et Le Caire antique.">
+<meta name="twitter:image" content="images/og-image.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Styles : un fichier par section, chargés dans l'ordre (responsive.css toujours en dernier) -->
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/header-footer.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/sections.css">
+<link rel="stylesheet" href="css/destinations.css">
+<link rel="stylesheet" href="css/quiz.css">
+<link rel="stylesheet" href="css/booking.css">
+<link rel="stylesheet" href="css/faq.css">
+<link rel="stylesheet" href="css/chatbot.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="#" class="brand"><span class="dial"></span> TimeTravel Agency</a>
+    <nav class="main-nav">
+      <a href="#about">L'agence</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#faq">FAQ</a>
+      <a href="#booking">Réserver</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Ouvrir le menu">☰</button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <video class="hero-video" autoplay muted loop playsinline poster="images/hero-poster.jpg">
+      <source src="images/hero-background.mp4" type="video/mp4">
+    </video>
+    <div class="hero-bg-overlay"></div>
+  </div>
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow hero-eyebrow">Agence de voyage temporel</div>
+      <h1>Explorez l'histoire, <em>réinventée</em>.</h1>
+      <p class="lede">TimeTravel Agency conçoit des expéditions sur mesure vers les époques les plus fascinantes du passé — encadrées, sécurisées, et pensées pour l'émerveillement.</p>
+      <div class="hero-actions">
+        <a href="#destinations" class="btn btn-primary">Voir les destinations</a>
+        <a href="#quiz" class="btn btn-ghost">Trouver mon époque</a>
+      </div>
+    </div>
+    <div class="hero-instrument" aria-hidden="true">
+      <div class="ring r1"></div>
+      <div class="ring r2"></div>
+      <div class="ring r3"></div>
+      <div class="core">COORDONNÉES<br>TEMPORELLES<br>ENGAGÉES</div>
+    </div>
+  </div>
+  <div class="hero-scroll-cue"><span>DÉFILER</span><span class="line"></span></div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section section-photo" id="about" style="--section-bg-image: url('images/agency-control-room.jpg');">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">L'agence</div>
+      <h2>Une expertise du temps, pas seulement du voyage</h2>
+      <p>Depuis notre atelier hors du temps, notre équipe de chronoguides sélectionne, sécurise et met en scène chaque époque pour en révéler l'essentiel — sans jamais en perturber le cours.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-card reveal">
+        <div class="num">Méthode</div>
+        <h3>Immersion sans interférence</h3>
+        <p>Nos protocoles garantissent une observation totale sans modifier le cours des évènements passés.</p>
+      </div>
+      <div class="about-card reveal">
+        <div class="num">Accompagnement</div>
+        <h3>Un chronoguide par groupe</h3>
+        <p>Historien, naturaliste ou spécialiste selon la destination, présent à chaque instant du séjour.</p>
+      </div>
+      <div class="about-card reveal">
+        <div class="num">Conseil</div>
+        <h3>Un agent dédié, disponible 24/7</h3>
+        <p>Notre agent conversationnel Aeon vous aide à choisir, comprendre et préparer votre voyage.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DESTINATIONS ============ -->
+<section class="section section-alt" id="destinations">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Catalogue</div>
+      <h2>Quatre époques, quatre hublots sur le passé</h2>
+      <p>Chaque destination est calibrée pour un type d'émerveillement différent : culture, nature, ou art. Cliquez sur une carte pour en découvrir tous les détails.</p>
+    </div>
+    <div class="destinations-carousel reveal">
+      <button class="carousel-btn prev" aria-label="Destinations précédentes">‹</button>
+      <div class="destinations-viewport">
+        <div class="destinations-grid"><!-- généré en JS --></div>
+      </div>
+      <button class="carousel-btn next" aria-label="Destinations suivantes">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section class="section" id="quiz">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Recommandation</div>
+      <h2>Quelle époque vous correspond ?</h2>
+      <p>Répondez à quatre questions, et nous vous indiquerons la destination temporelle la plus adaptée à vos envies.</p>
+    </div>
+    <div class="quiz-wrap reveal">
+      <div class="quiz-progress"></div>
+      <div class="quiz-steps"></div>
+      <div class="quiz-result"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOKING ============ -->
+<section class="section section-alt" id="booking">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Réservation</div>
+      <h2>Planifiez votre voyage temporel</h2>
+      <p>Sélectionnez une destination, indiquez vos dates, et nous préparons votre traversée.</p>
+    </div>
+    <div class="booking-grid reveal">
+      <form class="booking-form">
+        <div class="form-group">
+          <label for="booking-destination">Destination</label>
+          <select id="booking-destination">
+            <option value="paris">Paris, 1889</option>
+            <option value="cretace">Crétacé, -65M</option>
+            <option value="florence">Florence, 1504</option>
+            <option value="lecaire">Le Caire, 1300 av. J.-C.</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="booking-date">Date de départ</label>
+          <input type="date" id="booking-date" required>
+        </div>
+        <div class="form-group">
+          <label for="booking-travelers">Nombre de voyageurs</label>
+          <input type="number" id="booking-travelers" min="1" max="8" value="1" required>
+        </div>
+        <div class="form-group">
+          <label for="booking-name">Nom complet</label>
+          <input type="text" id="booking-name" placeholder="Votre nom" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Confirmer la demande</button>
+      </form>
+
+      <div>
+        <div class="booking-summary">
+          <h4>Récapitulatif</h4>
+          <div class="summary-row"><span>Destination</span><strong data-sum="dest">—</strong></div>
+          <div class="summary-row"><span>Durée</span><strong data-sum="duration">—</strong></div>
+          <div class="summary-row"><span>Tarif / personne</span><strong data-sum="price">—</strong></div>
+          <div class="summary-total"><span>Total estimé</span><span>—</span></div>
+          <p class="form-note">Demande sans engagement. Un chronoguide vous recontactera pour finaliser votre traversée.</p>
+        </div>
+        <div class="confirm-box">
+          <h3>Demande enregistrée ✦</h3>
+          <p>Votre demande de voyage vers <strong data-confirm="dest"></strong> a bien été prise en compte. Un chronoguide vous contactera prochainement pour finaliser les détails.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Questions fréquentes</div>
+      <h2>Avant de partir</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q">Le voyage temporel est-il sans danger ? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Oui pour l'immense majorité de nos destinations, classées "risque faible". Le Crétacé, classé "risque élevé" en raison de la faune, bénéficie d'un encadrement renforcé et de plateformes d'observation sécurisées.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Puis-je modifier le cours de l'histoire ? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Non : nos protocoles d'immersion sans interférence garantissent une observation totale sans aucun contact modifiant les évènements passés. C'est notre priorité absolue.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Que comprend le tarif affiché ? <span class="plus">+</span></button>
+        <div class="faq-a"><p>La traversée temporelle aller-retour, l'équipement adapté à l'époque, l'encadrement par un chronoguide, et l'assurance temporelle standard.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Comment choisir entre les quatre destinations ? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Faites notre quiz de recommandation ci-dessus, ou posez directement la question à Aeon, notre agent conversationnel, en bas à droite de l'écran.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="#" class="brand"><span class="dial"></span> TimeTravel Agency</a>
+        <p>Explorez l'histoire, réinventée. Voyages temporels encadrés vers les époques les plus fascinantes du passé.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <a href="#about">L'agence</a>
+          <a href="#destinations">Destinations</a>
+          <a href="#quiz">Quiz</a>
+          <a href="#booking">Réserver</a>
+        </div>
+        <div class="footer-col">
+          <h4>Destinations</h4>
+          <a href="#destinations">Paris, 1889</a>
+          <a href="#destinations">Crétacé, -65M</a>
+          <a href="#destinations">Florence, 1504</a>
+          <a href="#destinations">Le Caire, 1300 av. J.-C.</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 TimeTravel Agency — Projet pédagogique M1/M2</span>
+      <span>Contenu et illustrations conçus avec assistance IA</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ DESTINATION DETAIL MODAL ============ -->
+<div class="detail-overlay">
+  <div class="detail-panel"></div>
+</div>
+
+<!-- ============ CHATBOT WIDGET ============ -->
+<button class="chat-launcher" aria-label="Ouvrir l'assistant Aeon">
+  <span class="dot"></span>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+</button>
+
+<div class="chat-window">
+  <div class="chat-head">
+    <span class="dial">
+      <img class="chat-avatar" src="images/aeon-avatar.png" alt="Aeon" onerror="this.style.display='none';">
+    </span>
+    <div>
+      <strong>Aeon</strong>
+      <span>Conseiller temporel · en ligne</span>
+    </div>
+  </div>
+  <div class="chat-body">
+    <div class="msg bot">Bonjour, voyageur du temps ! Je suis Aeon, votre conseiller virtuel. Posez-moi vos questions sur nos voyages temporels — destinations, tarifs, sécurité ou réservation.</div>
+  </div>
+  <div class="chat-suggestions">
+    <button class="chip">Quels sont vos tarifs ?</button>
+    <button class="chip">Quelle destination choisir ?</button>
+    <button class="chip">Le Crétacé est-il dangereux ?</button>
+  </div>
+  <form class="chat-input-row">
+    <input type="text" placeholder="Posez-moi vos questions sur les voyages temporels…" aria-label="Message pour Aeon">
+    <button type="submit" aria-label="Envoyer">➤</button>
+  </form>
+</div>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

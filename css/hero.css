@@ -1,0 +1,103 @@
+/* ============ HERO ============ */
+/* ============ HERO ============ */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 76px;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  z-index: 0;
+  background: var(--ink);
+}
+.hero-video {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0.55;
+}
+.hero-bg-overlay {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 75% 20%, rgba(198,149,44,0.18) 0%, transparent 55%),
+    radial-gradient(ellipse at 15% 85%, rgba(76,128,120,0.18) 0%, transparent 55%),
+    linear-gradient(180deg, rgba(12,15,26,0.55) 0%, rgba(12,15,26,0.85) 100%);
+}
+.hero .container.hero-grid { position: relative; z-index: 1; }
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+  width: 100%;
+}
+.hero-eyebrow { margin-bottom: 22px; display:flex; align-items:center; gap: 10px;}
+.hero-eyebrow::before { content:''; width: 28px; height: 1px; background: var(--brass); display:inline-block; }
+
+.hero h1 {
+  font-size: clamp(2.6rem, 5.4vw, 4.3rem);
+  line-height: 1.04;
+  letter-spacing: -0.01em;
+  margin-bottom: 26px;
+}
+.hero h1 em {
+  font-style: italic;
+  color: var(--brass-light);
+}
+.hero p.lede {
+  font-size: 1.08rem;
+  color: var(--parchment-dim);
+  max-width: 480px;
+  margin-bottom: 36px;
+}
+.hero-actions { display: flex; gap: 18px; flex-wrap: wrap; }
+
+
+/* Hero instrument illustration */
+.hero-instrument {
+  position: relative;
+  aspect-ratio: 1;
+  max-width: 440px;
+  margin: 0 auto;
+}
+.hero-instrument .ring {
+  position: absolute; inset: 0;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+}
+.hero-instrument .ring.r2 { inset: 34px; border-color: rgba(76,128,120,0.35); animation: spin 40s linear infinite; }
+.hero-instrument .ring.r3 { inset: 70px; border-style: dashed; animation: spin 60s linear infinite reverse; }
+.hero-instrument .core {
+  position: absolute; inset: 100px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, rgba(232,199,126,0.35), rgba(12,15,26,0.9) 70%);
+  border: 1.5px solid var(--brass);
+  display: flex; align-items: center; justify-content: center;
+  text-align: center;
+  font-family: var(--font-mono);
+  color: var(--brass-light);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  box-shadow: inset 0 0 40px rgba(0,0,0,0.5);
+}
+.hero-instrument .tick {
+  position: absolute; width: 2px; height: 10px; background: var(--brass);
+  top: 0; left: 50%; transform-origin: 50% 220px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.hero-scroll-cue {
+  position: absolute;
+  bottom: 34px; left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  color: var(--parchment-dim);
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+}
+.hero-scroll-cue .line { width: 1px; height: 30px; background: linear-gradient(var(--brass), transparent); animation: pulse-line 2s ease-in-out infinite; }
+@keyframes pulse-line { 0%,100% { opacity: 0.3; } 50% { opacity: 1; } }

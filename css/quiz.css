@@ -1,0 +1,43 @@
+/* ============ QUIZ ============ */
+/* ============ QUIZ ============ */
+.quiz-wrap {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 48px;
+  background: linear-gradient(160deg, rgba(76,128,120,0.08), transparent 60%);
+  position: relative;
+}
+.quiz-progress { display: flex; gap: 8px; margin-bottom: 34px; }
+.quiz-progress span { height: 3px; flex: 1; background: var(--line); border-radius: 2px; overflow: hidden; }
+.quiz-progress span i { display: block; height: 100%; width: 0%; background: var(--brass); transition: width 0.4s var(--ease); }
+.quiz-progress span.done i { width: 100%; }
+.quiz-progress span.active i { width: 100%; background: var(--brass-light); }
+
+.quiz-step { display: none; }
+.quiz-step.active { display: block; animation: fadeIn 0.4s var(--ease); }
+.quiz-step .q-num { font-family: var(--font-mono); color: var(--brass); font-size: 0.75rem; letter-spacing: 0.15em; margin-bottom: 12px; }
+.quiz-step h3 { font-size: 1.4rem; margin-bottom: 26px; }
+.quiz-options { display: grid; gap: 14px; }
+.quiz-option {
+  text-align: left;
+  padding: 18px 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--parchment);
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  cursor: pointer;
+  transition: border-color 0.25s, background 0.25s, transform 0.2s;
+}
+.quiz-option:hover { border-color: var(--brass); background: rgba(198,149,44,0.06); transform: translateX(4px); }
+
+.quiz-result { display: none; text-align: center; }
+.quiz-result.active { display: block; animation: fadeIn 0.5s var(--ease); }
+.quiz-result .result-badge {
+  font-family: var(--font-mono); color: var(--brass); font-size: 0.75rem;
+  letter-spacing: 0.15em; margin-bottom: 16px; display:block;
+}
+.quiz-result h3 { font-size: 2rem; margin-bottom: 14px; }
+.quiz-result p { color: var(--parchment-dim); max-width: 480px; margin: 0 auto 28px; }
+.quiz-restart { background:none; border:none; color: var(--parchment-dim); text-decoration: underline; cursor:pointer; margin-top: 10px; font-size: 0.85rem; }

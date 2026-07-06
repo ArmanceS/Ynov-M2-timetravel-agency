@@ -1,0 +1,26 @@
+/* Chargé en dernier volontairement : ces règles surchargent tout le reste sur mobile/tablette (<900px). */
+/* ============ RESPONSIVE ============ */
+@media (max-width: 900px) {
+  nav.main-nav { position: fixed; top: 76px; left:0; right:0; background: var(--ink); flex-direction: column; padding: 20px 32px; gap: 20px; border-bottom: 1px solid var(--line); transform: translateY(-120%); transition: transform 0.3s var(--ease); }
+  nav.main-nav.open { transform: translateY(0); }
+  .nav-toggle { display: block; }
+  .hero-grid { grid-template-columns: 1fr; text-align: center; }
+  .hero p.lede { margin-left: auto; margin-right: auto; }
+  .hero-eyebrow { justify-content: center; }
+  .hero-actions { justify-content: center; }
+  .hero-instrument { margin-top: 40px; max-width: 300px; }
+  .about-grid { grid-template-columns: 1fr; }
+  .destinations-carousel { gap: 0; }
+  .destinations-grid { display: block; transform: none !important; }
+  .destinations-grid .dest-card { flex: none; width: 100%; margin-bottom: 24px; }
+  .carousel-btn { display: none; }
+  .booking-grid { grid-template-columns: 1fr; }
+  .detail-facts { grid-template-columns: 1fr; }
+  .detail-highlights { grid-template-columns: 1fr; }
+  .detail-gallery { grid-template-columns: repeat(2, 1fr); }
+  .itinerary-row { grid-template-columns: 40px 1fr; }
+  .detail-price-bar { flex-direction: column; align-items: flex-start; }
+  .chat-window { right: 16px; bottom: 96px; width: calc(100vw - 32px); }
+  .chat-launcher { right: 16px; }
+  .section { padding: 80px 0; }
+}
