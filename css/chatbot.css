@@ -39,7 +39,7 @@
   display: flex; align-items: center; gap: 12px;
   background: linear-gradient(180deg, rgba(198,149,44,0.08), transparent);
 }
-.chat-head .dial { width: 26px; height: 26px; border-radius: 50%; border: 1.5px solid var(--brass); flex-shrink:0; position: relative; overflow: hidden; }
+.chat-head .dial { width: 44px; height: 44px; border-radius: 50%; border: 1.5px solid var(--brass); flex-shrink:0; position: relative; overflow: hidden; }
 .chat-avatar { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .chat-head strong { display: block; font-family: var(--font-display); font-size: 0.98rem; }
 .chat-head span { display: block; font-size: 0.7rem; color: var(--patina); font-family: var(--font-mono); }
