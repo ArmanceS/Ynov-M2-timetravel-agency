@@ -2,7 +2,7 @@
 
 Webapp pour une agence de voyage temporel fictive, créée dans le cadre du Projet Supervisé IA M1/M2 — Session 2 (Webapp & IA Agents).
 
-**Démo en ligne :** https://armances.github.io/Ynov-M2-timetravel-agency/
+**Démo en ligne :** https://armances.github.io/Ynov-M2-timetravel-agency/ 
 ---
 
 ## 🛠 Stack technique
